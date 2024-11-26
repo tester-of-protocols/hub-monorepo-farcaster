@@ -1,0 +1,40 @@
+version = 1
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/tester-of-protocols/hub-monorepo-farcaster"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "angular",
+    "vue",
+    "ember",
+    "angularjs",
+    "meteor"
+  ]
+  environment = [
+    "mocha",
+    "vitest",
+    "jasmine",
+    "jest",
+    "cypress",
+    "browser",
+    "mongo",
+    "jquery",
+    "nodejs"
+  ]
+
+[[analyzers]]
+name = "shell"
